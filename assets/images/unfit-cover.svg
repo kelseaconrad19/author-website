@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="900" viewBox="0 0 600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Unfit cover placeholder</title>
+  <desc id="desc">Placeholder artwork for the novel Unfit until the final cover is provided.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b0c0c" />
+      <stop offset="100%" stop-color="#3a1f22" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="900" fill="url(#bg)" />
+  <rect x="40" y="40" width="520" height="820" fill="none" stroke="#f2f2f0" stroke-width="2" opacity="0.6" />
+  <text x="50%" y="42%" text-anchor="middle" fill="#f2f2f0" font-family="'Libre Baskerville', Georgia, serif" font-size="64" letter-spacing="6">UNFIT</text>
+  <text x="50%" y="50%" text-anchor="middle" fill="#f2f2f0" font-family="'Source Sans 3', Arial, sans-serif" font-size="20" letter-spacing="2">WORKING COVER</text>
+  <text x="50%" y="70%" text-anchor="middle" fill="#f2f2f0" font-family="'Source Sans 3', Arial, sans-serif" font-size="18" opacity="0.8">Replace with final art in assets/images/</text>
+</svg>
