@@ -147,17 +147,28 @@ const attachFilterListeners = () => {
   sortSelect.addEventListener('change', renderPosts);
 };
 
+const normalizePosts = (posts) => {
+  return posts.map((post) => {
+    return {
+      ...post,
+      date: post.publishedAt,
+      categories: Array.isArray(post.categories) ? post.categories : [],
+    };
+  });
+};
+
 const init = async () => {
   try {
-    const response = await fetch('posts.json');
+    const response = await fetch('/api/posts');
     if (!response.ok) {
       throw new Error('Failed to load posts.');
     }
     const data = await response.json();
-    state.posts = data;
+    const normalized = normalizePosts(data);
+    state.posts = normalized;
 
     const categories = Array.from(
-      new Set(data.flatMap((post) => post.categories))
+      new Set(normalized.flatMap((post) => post.categories))
     ).sort();
 
     renderCategoryChips(categories);
