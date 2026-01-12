@@ -176,6 +176,14 @@ h1 {
   margin: 0 auto;
 }
 
+.blog-hero .hero-panel {
+  max-width: 480px;
+}
+
+.newsletter-cta h2 {
+  margin-top: 0;
+}
+
 .cover-card {
   display: grid;
   gap: 1.5rem;
@@ -235,6 +243,125 @@ h1 {
 
 .section-heading {
   margin-bottom: 2.5rem;
+}
+
+.filter-bar {
+  display: grid;
+  gap: 1.5rem;
+  background: var(--white);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 18px 32px var(--shadow);
+}
+
+.filter-label {
+  font-weight: 600;
+  color: var(--ebony);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.filter-search input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(4, 13, 11, 0.18);
+  font-size: 0.95rem;
+}
+
+.filter-group {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.chip-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.chip {
+  border-radius: 999px;
+  border: 1px solid rgba(4, 13, 11, 0.18);
+  padding: 0.5rem 1rem;
+  background: transparent;
+  font-weight: 600;
+  color: var(--deep-crimson);
+  cursor: pointer;
+}
+
+.chip.is-active {
+  background: var(--deep-crimson);
+  color: var(--white);
+  border-color: transparent;
+}
+
+.date-range {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+}
+
+.date-range label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 600;
+  color: var(--ebony);
+}
+
+.date-range input {
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(4, 13, 11, 0.2);
+  font-size: 0.95rem;
+}
+
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.post-card {
+  background: var(--white);
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 20px 40px var(--shadow);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.post-meta {
+  font-size: 0.85rem;
+  color: var(--ebony);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin: 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: rgba(144, 0, 30, 0.12);
+  color: var(--deep-crimson);
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.empty-state {
+  margin-top: 2.5rem;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 18px;
+  border: 1px dashed rgba(4, 13, 11, 0.2);
+  color: var(--ebony);
+  background: rgba(254, 254, 254, 0.7);
 }
 
 .book-feature {
