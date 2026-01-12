@@ -165,19 +165,25 @@
           </div>
           <div class="newsletter-card">
             <h3>Join the list</h3>
-            <p class="small">MailerLite embed will live here.</p>
-            <form class="signup-form" action="#" method="post">
-              <label>
-                Name
-                <input type="text" name="name" placeholder="Your name" />
-              </label>
-              <label>
-                Email
-                <input type="email" name="email" placeholder="you@example.com" required />
-              </label>
-              <button class="button primary" type="submit">Send me the free story</button>
-              <p class="fineprint">By subscribing, you agree to receive emails from Kelsea Conrad. You can unsubscribe anytime.</p>
-            </form>
+            <p class="small">Claim the free short story + first chapter of <em>Unfit</em> when you subscribe.</p>
+            <div class="ml-embedded" data-form="1824816"></div>
+            <!-- MailerLite Universal -->
+            <script>
+              (function (w, d, e, u, f, l, n) {
+                w[f] =
+                  w[f] ||
+                  function () {
+                    (w[f].q = w[f].q || []).push(arguments);
+                  };
+                l = d.createElement(e);
+                l.async = 1;
+                l.src = u;
+                n = d.getElementsByTagName(e)[0];
+                n.parentNode.insertBefore(l, n);
+              })(window, document, "script", "https://assets.mailerlite.com/js/universal.js", "ml");
+              ml("account", "1824816");
+            </script>
+            <!-- End MailerLite Universal -->
           </div>
         </div>
       </section>
