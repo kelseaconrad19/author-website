@@ -245,6 +245,12 @@ h1 {
   margin-bottom: 2.5rem;
 }
 
+.blog-preview {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 640px;
+}
+
 .filter-bar {
   display: grid;
   gap: 1.5rem;
