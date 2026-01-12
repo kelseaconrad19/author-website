@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelsea Conrad | Craft & Business Notes</title>
+    <meta
+      name="description"
+      content="Craft essays, author business notes, and suspense insights from Kelsea Conrad."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-name">Kelsea Conrad</span>
+          <span class="brand-tag">Finally Creative</span>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="index.html#books">Books</a>
+          <a href="index.html#about">About</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#newsletter">Newsletter</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero blog-hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Craft & Business Notes</p>
+            <h1>Behind the suspense: how stories take shape.</h1>
+            <p class="lead">
+              Explore posts on character psychology, pacing, and the author-business decisions that
+              keep a thriller career moving. Use the filters to find insights that match your current
+              writing season.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary" href="#newsletter-cta">Join the newsletter</a>
+              <a class="button ghost" href="#posts">Browse the posts</a>
+            </div>
+          </div>
+          <div class="hero-panel">
+            <div class="newsletter-cta" id="newsletter-cta">
+              <h2>Get the monthly craft letter</h2>
+              <p>
+                Receive a monthly roundup of new essays, suspense tips, and a behind-the-scenes look at
+                <em>Unfit</em>.
+              </p>
+              <form class="signup-form" action="#" method="post">
+                <label>
+                  Email
+                  <input type="email" name="email" placeholder="you@example.com" required />
+                </label>
+                <button class="button primary" type="submit">Subscribe</button>
+                <p class="fineprint">No spam. Just suspense and strategy.</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Filter the archive</h2>
+            <p>Search by keyword, topic, or the month you published—or the month you need inspiration.</p>
+          </div>
+          <div class="filter-bar">
+            <label class="filter-search">
+              <span class="filter-label">Search</span>
+              <input id="search-input" type="search" placeholder="Search by keyword" />
+            </label>
+            <div class="filter-group">
+              <span class="filter-label">Categories</span>
+              <div class="chip-group" id="category-chips"></div>
+            </div>
+            <div class="filter-group">
+              <span class="filter-label">Date range</span>
+              <div class="date-range">
+                <label>
+                  From
+                  <input id="from-month" type="month" />
+                </label>
+                <label>
+                  To
+                  <input id="to-month" type="month" />
+                </label>
+              </div>
+            </div>
+            <label class="filter-search">
+              <span class="filter-label">Sort</span>
+              <select id="sort-select">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+              </select>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section id="posts" class="section alt">
+        <div class="container">
+          <div class="section-heading">
+            <h2>Latest posts</h2>
+            <p>Each post blends psychological tension with practical takeaways for writers.</p>
+          </div>
+          <div class="post-grid" id="post-grid"></div>
+
+          <div class="empty-state" id="empty-state" role="status" hidden>
+            <h3>No posts match your filters yet.</h3>
+            <p>Try clearing the date range or selecting a different category to see more entries.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Finally Creative</h3>
+          <p>Professional, knowledgeable, and friendly storytelling with a sharp edge.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="index.html#books">Books</a>
+          <a href="blog.html">Blog</a>
+          <a href="index.html#newsletter">Newsletter</a>
+        </div>
+        <div>
+          <p class="small">© 2025 Kelsea Conrad. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/blog.js"></script>
+  </body>
+</html>
