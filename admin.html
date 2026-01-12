@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelsea Conrad | Admin</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="brand-name">Kelsea Conrad</span>
+          <span class="brand-tag">Admin Studio</span>
+        </div>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero admin-hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Admin</p>
+            <h1>Shape the suspenseful stories you publish.</h1>
+            <p class="lead">
+              Draft, edit, and publish posts to keep your readers up to date. Log in to manage the
+              archive and push new ideas live.
+            </p>
+          </div>
+          <div class="hero-panel admin-panel">
+            <div id="login-card" class="admin-card">
+              <h2>Sign in</h2>
+              <form id="login-form" class="admin-form">
+                <label>
+                  Username
+                  <input type="text" name="username" required />
+                </label>
+                <label>
+                  Password
+                  <input type="password" name="password" required />
+                </label>
+                <button class="button primary" type="submit">Log in</button>
+                <p class="fineprint" id="login-error" aria-live="polite"></p>
+              </form>
+            </div>
+            <div id="session-card" class="admin-card" hidden>
+              <h2>Session active</h2>
+              <p>You are signed in. Use the editor below to craft new posts.</p>
+              <button class="button ghost" id="logout-button" type="button">Log out</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container admin-grid">
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2>Posts</h2>
+              <button class="button ghost" id="new-post" type="button">New draft</button>
+            </div>
+            <div id="post-list" class="admin-list"></div>
+          </div>
+          <div class="admin-card">
+            <div class="admin-card-header">
+              <h2>Edit post</h2>
+              <p class="fineprint" id="editor-status">Select a post to edit.</p>
+            </div>
+            <form id="post-form" class="admin-form" autocomplete="off">
+              <input type="hidden" name="id" />
+              <label>
+                Title
+                <input type="text" name="title" required />
+              </label>
+              <label>
+                Slug
+                <input type="text" name="slug" placeholder="your-post-slug" required />
+              </label>
+              <label>
+                Excerpt
+                <textarea name="excerpt" rows="3" required></textarea>
+              </label>
+              <label>
+                Categories (comma separated)
+                <input type="text" name="categories" placeholder="Craft, Business" />
+              </label>
+              <label>
+                Content
+                <textarea name="content" rows="8" required></textarea>
+              </label>
+              <div class="admin-actions">
+                <button class="button primary" type="submit">Save post</button>
+                <button class="button ghost" id="publish-button" type="button">Publish</button>
+              </div>
+              <p class="fineprint" id="form-feedback" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>Finally Creative</h3>
+          <p>Secure admin portal for managing posts.</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="blog.html">Blog</a>
+        </div>
+        <div>
+          <p class="small">© 2025 Kelsea Conrad. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/admin.js"></script>
+  </body>
+</html>
